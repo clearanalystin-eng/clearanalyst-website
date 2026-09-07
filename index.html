@@ -410,6 +410,10 @@
     .faq-item.open .faq-answer { max-height: 300px; }
     .faq-answer-content { padding: 0 24px 20px; font-size: 14px; color: var(--neutral-500); line-height: 1.7; }
 
+    .video-section { background: var(--neutral-50); border-top: 1px solid var(--neutral-200); border-bottom: 1px solid var(--neutral-200); }
+    .video-frame { max-width: 880px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-2xl); border: 1px solid var(--neutral-200); background: #000; }
+    .video-frame video { display: block; width: 100%; height: auto; }
+
     .cta-banner { background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-800) 40%, var(--primary-700) 100%); position: relative; overflow: hidden; }
     .cta-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 60%; height: 200%; background: radial-gradient(ellipse, rgba(74,222,128,0.1) 0%, transparent 70%); }
     .cta-content { position: relative; z-index: 10; text-align: center; max-width: 640px; margin: 0 auto; }
@@ -767,6 +771,22 @@
             </div>
             <a href="#consultation" class="btn-primary">Learn More About Working With Us <i class="fas fa-arrow-right"></i></a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="section video-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label reveal">Watch</p>
+          <h2 class="section-title reveal stagger-1">Clear Analyst in Action</h2>
+          <p class="section-description reveal stagger-2">A quick introduction to how we bring financial clarity and digital growth to your business.</p>
+        </div>
+        <div class="video-frame reveal stagger-2">
+          <video controls preload="metadata" playsinline width="1920" height="1080" aria-label="Clear Analyst promo video">
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
         </div>
       </div>
     </section>
